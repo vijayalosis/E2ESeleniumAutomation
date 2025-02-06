@@ -11,6 +11,7 @@ public class TS_002 {
 	System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe");
 	ChromeDriver driver = new ChromeDriver();
 	driver.get("https://www.facebook.com");	
+	driver.manage().window().maximize();
 	driver.findElementById("email").sendKeys("two");
 	driver.findElementById("pass").sendKeys("two");
 	driver.quit();
